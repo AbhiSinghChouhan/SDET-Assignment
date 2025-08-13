@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Playwright outputs
+playwright-report/
+test-results/
+blob-report/
+videos/
+traces/
+storageStates/
+
+# Environment files
+.env
+env/.env.*
+
+
+# OS files
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

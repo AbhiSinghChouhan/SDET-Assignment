@@ -1,0 +1,39 @@
+{
+  "name": "sdet-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:dev": "cross-env ENV=dev playwright test",
+    "test:qa": "cross-env ENV=qa playwright test",
+    "test:prod": "cross-env ENV=prod playwright test",
+    "report": "playwright show-report",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "@types/node": "^24.2.1",
+    "@typescript-eslint/eslint-plugin": "^8.39.1",
+    "@typescript-eslint/parser": "^8.39.1",
+    "cross-env": "^10.0.0",
+    "eslint": "^9.33.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-playwright": "^2.2.2",
+    "globals": "^16.3.0",
+    "prettier": "^3.6.2",
+    "tsconfig-paths": "^4.2.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "zod": "^4.0.17"
+  }
+}
