@@ -1,6 +1,6 @@
 import { test, expect } from '../setup/test';
 
-test.describe('Home smoke @smoke', () => {
+test.describe('Dashboard smoke @smoke', () => {
   test.beforeEach(async ({ dashboardPage }) => {
     await dashboardPage.goto();
     await dashboardPage.closePopup();
